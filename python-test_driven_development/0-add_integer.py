@@ -11,7 +11,8 @@ def add_integer(a, b=98):
     
         b has value of 98
 
-    Float arguments are typecasted to ints using isinstance before addition is performed.
+    Float arguments are converted to ints using isinstance
+    before addition is performed.
 
     Raises:
         TypeError: If either of a or b is a non-integer and non-float.
