@@ -67,11 +67,11 @@ New lines within a string are printed as normal.
 
 ::
 
-    >>> text_indentation("\n\n\n Printing three lines")
+    >>> text_indentation("\n\n\n Printing three new lines.")
     <BLANKLINE>
     <BLANKLINE>
     <BLANKLINE>
-    Printing three lines
+    Printing three new lines.
     <BLANKLINE>
 
 ::
