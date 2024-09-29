@@ -1,8 +1,13 @@
 #!/usr/bin/node
 
-const { list } = require('./100-data');
+const inputDictionary = require('./101-data').dict;
 
-const newList = list.map((value, index) => value * index);
-
-console.log(list);
-console.log(newList);
+const reversedDictionary = {};
+for (const [key, value] of Object.entries(inputDictionary)) {
+  if (reversedDictionary[value] === undefined) {
+    reversedDictionary[value] = [key];
+  } else {
+    reversedDictionary[value].push(key);
+  }
+}
+console.log(reversedDictionary);
